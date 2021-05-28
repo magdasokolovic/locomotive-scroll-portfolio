@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=Bodoni+Moda:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Syncopate:wght@400;700&display=swap');
+
+//     font-family: 'Bodoni Moda', serif;
+
+// font-family: 'Bai Jamjuree', sans-serif;
+
+// font-family: 'Syncopate', sans-serif;
+
+$bg-color: #f5f0ec;
+// $font-main: 'Syncopate', sans-serif;
+
+body {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    background-color: $bg-color;
+    // cursor: none;
+}
+.main-container {
+    padding: 5vw;
+}
+
+section {
+    padding: 100px 0;
+    .section-header {
+        margin-bottom: 50px;
+    }
+}
