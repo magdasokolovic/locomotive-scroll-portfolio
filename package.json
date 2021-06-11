@@ -16,6 +16,8 @@
     "gatsby-plugin-sharp": "^3.4.1",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-sharp": "^3.4.0",
+    "gsap": "^3.6.1",
+    "locomotive-scroll": "^4.1.1",
     "node-sass": "^6.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

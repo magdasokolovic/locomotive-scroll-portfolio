@@ -4,7 +4,8 @@ import SectionHeader from '../SectionHeader/SectionHeader'
 
 export default function Footer() {
     return (
-        <section className="footer">
+        <section className="footer"
+        data-scroll-section>
             <SectionHeader title="Made in"/>
             <h1 className="location" id="location-text">Berlin, Germany</h1>
         </section>

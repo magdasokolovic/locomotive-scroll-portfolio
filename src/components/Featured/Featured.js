@@ -8,7 +8,9 @@ export default function Featured() {
 
 
     return (
-        <section className="featured-section">
+        <section className="featured-section"
+         data-scroll-section
+        >
 
             <div className="featured-row-layout">
                 <h6>love is..</h6>
