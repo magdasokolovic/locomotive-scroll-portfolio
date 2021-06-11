@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Gallery from '../components/Gallery/Gallery'
 import Footer from '../components/Footer/Footer'
 import useLocoScroll from '../hooks/useLocoScroll'
+
 const Home = () => {
     const [preloader, setPreloader] = useState(true);
 
