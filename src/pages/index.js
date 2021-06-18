@@ -9,11 +9,30 @@ const HomeLazy = Loadable({
   loading: loader,
 });
 
-const Index = () => {
+function Telefon() {
   return (
-    <>
-      <HomeLazy />
+      <div className="telefon">
+          <h1>Przecież prosiłam otworzyć tylko na laptopie lub komputerze! :)</h1>
+      </div>
+  )
+}
+
+
+const Index = () => {
+  let width = window.innerWidth;
+
+  return (
+    <> 
+      {width < 1200 ? (
+          <Telefon/>
+        )
+        :
+        (
+          <HomeLazy />
+        )
+      }
     </>
   );
 };
+
 export default Index;

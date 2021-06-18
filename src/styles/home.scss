@@ -16,10 +16,6 @@ body {
     background-color: $bg-color;
     // cursor: none;
 
-    @media (max-width: 966px) {
-        background-color: yellow;
-        color: black;
-    }
 }
 
 .telefon {
@@ -71,24 +67,27 @@ section {
 
 ///// MEDIA QUERIES:
 @media (max-width: 966px) {
-    .telefon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        h1 {
-            font-size: 1.5vw;
-            text-transform: uppercase;
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 600;
-        }
-        h2 {
-            font-size: 1.5vw;
-            text-transform: uppercase;
-            font-family: 'Bodoni Moda', serif;
-            font-style: italic;
-            margin-top: 10px;
-        }
-    }
+    body {
+        background-color: #d53f41;
+        color: #dbd8d6;
+            .telefon {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-family: 'Bai Jamjuree', sans-serif;
+                    font-weight: 600;
+
+                }
+            }
         
+    }
 }
 

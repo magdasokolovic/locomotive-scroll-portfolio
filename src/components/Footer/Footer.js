@@ -43,7 +43,7 @@ export default function Footer() {
     return (
         <section className="footer"
         data-scroll-section>
-            <SectionHeader title="Made by"/>
+            <SectionHeader title="Strona zrobiona przez"/>
             <h1 className={cn("location", {'is-reveal': reveal})} id="location-text"
             ref={ref}>Magda Sokol</h1>
         </section>

@@ -45,12 +45,7 @@ const Home = () => {
             )
         :
             ( <div className="main-container" id="main-container"
-            data-scroll-container
-           >
-               <div className="telefon">
-                    <h1>Przecież prosiłam otworzyć</h1>  
-                    <h2>tylko na laptopie!! :)) </h2>
-               </div>
+            data-scroll-container>
 
                 <Navbar/>
                 <Header/>
