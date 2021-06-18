@@ -1,8 +1,8 @@
 import React from 'react'
 import './Featured.scss'
 
-import image1 from './featured-images/gallery-4.webp'
-import image2 from './featured-images/gallery-5.webp'
+import image1 from './featured-images/image-1.webp'
+import image2 from './featured-images/image-2.webp'
 
 export default function Featured() {
 
@@ -13,7 +13,7 @@ export default function Featured() {
         >
 
             <div className="featured-row-layout">
-                <h6>love is..</h6>
+                <h6>love is <em>wciąż</em>..</h6>
                 <img alt="wedding couple" src={image1} data-scroll/>
             </div>
 

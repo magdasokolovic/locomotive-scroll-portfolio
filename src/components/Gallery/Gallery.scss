@@ -1,7 +1,8 @@
 //Gallery:
 // .section-wrapper 
 .gallery-wrap {
-    background-color: #d53f41;
+    // background-color: #d53f41;
+    background-color: #ed6a5e;
     margin-left: -5vw;
     margin-right: -5vw;
     position: relative;
@@ -58,49 +59,50 @@
     }
     .gallery-item-info {
         position: absolute;
-        bottom: 10%;
+        bottom: 1%;
         z-index: 1;
         transform: translateX(-20%);
         color: #dbd8d6;
+        mix-blend-mode: difference;
+        
         .gallery-info-title {
             line-height: 6vw;
             font-family: 'Bai Jamjuree', sans-serif;
             -webkit-font-smoothing: antialiased;
             font-weight: 600;
-            font-size: 6vw;
+            font-size: 5vw;
         }
-        .gallery-info-subtitle {
+            .gallery-info-subtitle {
             position: relative;
             line-height: 6vw;
             font-family: 'Bodoni Moda', serif;
             color: transparent;
-            font-weight: 400;
-            font-size: 6vw;
-            -webkit-text-stroke: 2px #dbd8d6;
-            
-        }
+            font-weight: 600;
+            font-size: 5vw;
+            -webkit-text-stroke: 4px #dbd8d6;
+            }
         .gallery-info-category {
             position: relative;
             line-height: 24px;
             font-family: 'Bai Jamjuree', sans-serif;
             -webkit-font-smoothing: antialiased;
             font-weight: 400;
-            font-size: 24px;
+            font-size: 1rem;
             margin-top: 2vh;
         }
-    
+
     }
   
     .gallery-item-image {
-        background-size: cover;
-        background-position: center;
-        transform-origin: center;
-        width: 100%;
-        height: 100%;
-        will-change: transform;
-        transform: scale(0.7);
-        transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
-        filter: grayscale(100%) sepia(20%) brightness(80%);
+            background-size: cover;
+            background-position: center;
+            transform-origin: center;
+            width: 100%;
+            height: 100%;
+            will-change: transform;
+            transform: scale(0.7);
+            transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+            filter: grayscale(100%) sepia(20%) brightness(80%);
     }
 }
 

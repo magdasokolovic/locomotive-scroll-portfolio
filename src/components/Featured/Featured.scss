@@ -13,7 +13,7 @@
     }
 
     h6 {
-        font-size: 22px;
+        font-size: 3rem;
         font-weight: 500;
         text-transform: uppercase;
     }
@@ -31,7 +31,7 @@
         }
     }
     .featured-column-layout {
-        grid-template-columns: 100px auto;
+        grid-template-columns: 300px auto;
         align-items: flex-end;
         img {
             width: 100%;

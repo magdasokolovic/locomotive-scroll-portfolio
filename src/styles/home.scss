@@ -14,7 +14,7 @@ body {
     color: black;
     font-family: 'Poppins', sans-serif;
     background-color: $bg-color;
-    // cursor: none;
+    cursor: none;
 
 }
 
@@ -68,7 +68,7 @@ section {
 ///// MEDIA QUERIES:
 @media (max-width: 966px) {
     body {
-        background-color: #d53f41;
+        background-color: #ed6a5e;
         color: #dbd8d6;
             .telefon {
                 height: 100vh;

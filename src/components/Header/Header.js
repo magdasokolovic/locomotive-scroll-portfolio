@@ -3,6 +3,7 @@ import './Header.scss'
 import gsap from 'gsap'
 import SplitText from '../../utils/Split3.min.js'
 
+
 export default function Header() {
     useEffect(()=>{
         const split = new SplitText("#header-text", {
@@ -27,13 +28,13 @@ export default function Header() {
     return (
         <section className="header-container"
         data-scroll-section>
-            <ul className="header-menu">
+            {/* <ul className="header-menu">
                 <li>Intro</li>
-                <li>About</li>
-                <li>Featured</li>
-            </ul>
+                <li>Pozdrowienia</li>
+                <li>Galeria</li>
+            </ul> */}
 
-            <h1 id="header-text">Rok Slubu</h1>
+            <h1 id="header-text">Rok po ślubie...</h1>
         </section>
     )
 }
