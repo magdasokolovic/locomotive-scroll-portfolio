@@ -1,0 +1,51 @@
+.main-container {
+    background: #d53f41;
+    height: 100vh;
+    padding-right: 500px;
+    //we need for the revealing Footer section at the end:
+    box-sizing: border-box;
+    .scroll-container {
+        .content {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(50, 2%);
+            grid-template-rows: repeat(50, 2%);
+            width: 250vw;
+            padding-left: 12vw;
+            height: 100%;
+            position: relative;
+            align-items: center;
+            background-color: white;
+
+            .gallery-helper {
+                grid-area: 43/1 / span 2 / span 1;
+                font-size: 20px;
+            }  
+            .behind-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-transform: uppercase;
+                font-size: 12em;
+                font-family: 'Bodoni Moda', serif;
+                font-weight: 500;
+                letter-spacing:50px;
+                &.fill {
+                    color: rgba(0, 0, 0, 0.2);
+                }
+                &.outline {
+                    z-index: 2;
+                    mix-blend-mode: overlay;
+                }
+            }
+           
+        }
+    }
+}

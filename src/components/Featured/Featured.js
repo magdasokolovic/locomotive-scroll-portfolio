@@ -14,12 +14,12 @@ export default function Featured() {
 
             <div className="featured-row-layout">
                 <h6>love is..</h6>
-                <img alt="wedding couple" src={image1}/>
+                <img alt="wedding couple" src={image1} data-scroll/>
             </div>
 
             <div className="featured-column-layout">
                 <h6>..in the air</h6>
-                <img alt="wedding couple" src={image2}/>
+                <img alt="wedding couple" src={image2} data-scroll/>
             </div>
 
         </section>

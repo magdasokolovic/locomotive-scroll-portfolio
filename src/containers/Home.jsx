@@ -5,6 +5,7 @@ import Header from '../components/Header/Header'
 import Navbar from '../components/Navbar/Navbar'
 import Gallery from '../components/Gallery/Gallery'
 import Footer from '../components/Footer/Footer'
+// import SecondGallery from '../components/SecondGallery/SecondGallery'
 import useLocoScroll from '../hooks/useLocoScroll'
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
 
     useLocoScroll(!preloader);
 
-    const [timer, setTimer] = useState(2)
+    const [timer, setTimer] = useState(1)
 
     const id = useRef(null)
 
@@ -52,6 +53,7 @@ const Home = () => {
                 <About/>
                 <Gallery/>
                 <Footer/>
+                {/* <SecondGallery/> */}
             </div> )
         }
             

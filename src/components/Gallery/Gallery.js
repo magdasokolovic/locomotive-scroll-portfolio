@@ -1,5 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Gallery.scss'
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import cn from 'classnames'
+import useOnScreen from '../../hooks/useOnScreen'
+import './Gallery.scss'
+
 // import image1 from './images/gallery-1.webp'
 // import image2 from './images/gallery-2.webp'
 // import image3 from './images/gallery-3.webp'
@@ -40,8 +46,17 @@ const images = [
 
 ]
 function GalleryItem({src, category, subtitle, title, updateActiveImage, index}) {
+
+    const ref = useRef(null);
+    const onScreen = useOnScreen(ref, 0.5);
+    useEffect(()=>{
+        if (onScreen) {
+            updateActiveImage(index)
+        }
+    }, [onScreen, index])
+
     return (
-        <div className="gallery-item-wrapper" data-scroll-section>
+        <div className={cn("gallery-item-wrapper", {'is-reveal': onScreen})} ref={ref}>
             <div></div>
                 <div className="gallery-item">
                     <div className="gallery-item-info">
@@ -60,16 +75,42 @@ function GalleryItem({src, category, subtitle, title, updateActiveImage, index})
 
 export default function Gallery({src, index}) {
     const [activeImage, setActiveImage] = useState(1)
+    const ref = useRef(null)
 
+    useEffect(()=>{
+        setTimeout(()=>{
+            let sections = gsap.utils.toArray('.gallery-item-wrapper');
 
+            gsap.to(sections, {
+                xPercent: -100 * (sections.length - 1), 
+                ease: 'none',
+                scrollTrigger: {
+                    start: 'top top',
+                    trigger: ref.current,
+                    scroller: "#main-container",
+                    pin: true,
+                    scrub: 0.5,
+                    span: 1/(sections.length - 1),
+                    end: ()=>`+=${ref.current.offsetWidth}`,
+                }
+            })
+    
+            ScrollTrigger.refresh()
+        })
+       
+    }, [])
+
+    const handleUpdateActiveImage = (index) => {
+        setActiveImage(index+1)
+    }
     return (
-        <section className="section-wrapper gallery-wrap">
-            <div className="gallery">
+        <section data-scroll-section className="section-wrapper gallery-wrap">
+            <div className="gallery" ref={ref}>
+
                 <div className="gallery-counter">
                     <span>{activeImage}</span>
-                    <span className="divider"></span>
+                    <span className="divider"/>
                     <span>{images.length}</span>
-
                 </div>
 
                 {images.map((image, index)=>(
@@ -77,7 +118,7 @@ export default function Gallery({src, index}) {
                         key={src}
                         index={index}
                         {...image}
-                        updateActiveImage={(index)=>setActiveImage(index+1)}
+                        updateActiveImage={handleUpdateActiveImage}
                     />
                     ))}
             </div>
