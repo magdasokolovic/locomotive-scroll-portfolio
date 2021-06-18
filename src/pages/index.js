@@ -22,7 +22,7 @@ function Telefon() {
 const Index = () => {
 
   // let width = window.innerWidth
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
   const breakpoint = 966;
 
   useEffect(() => {
