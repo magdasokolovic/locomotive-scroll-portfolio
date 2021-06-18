@@ -21,21 +21,31 @@ function Telefon() {
 
 const Index = () => {
 
-  // let width = window.innerWidth
-  const [width, setWidth] = useState(0);
-  const breakpoint = 966;
+  // const hasWindow = typeof window !== 'undefined';
 
-  useEffect(() => {
-    /* Inside of a "useEffect" hook add an event listener that updates
-       the "width" state variable when the window size changes */
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  // function getWidth() {
+  //   const width = hasWindow ? window.innerWidth : null;
+  //   return width
+  // }
+  
+  // const [newWidth, setWidth] = useState(getWidth());
+  // const breakpoint = 966;
 
-    /* passing an empty array as the dependencies of the effect will cause this
-       effect to only run when the component mounts, and not each time it updates.
-       We only want the listener to be added once */
-  }, []);
+  // useEffect(() => {
+  //  if (hasWindow) {
+     
+  //  }
+  //   window.addEventListener("resize", () => setWidth(window.innerWidth));
+  //   return () => {
+  //     window.removeEventListener('resize', () => setWidth(window.innerWidth))
+  //   }
 
-  return width < breakpoint ? <Telefon/> : <HomeLazy />;
+  // }, []);
+
+  return (
+  <HomeLazy />
+  )
+  // width < breakpoint ? <Telefon/> : 
   
 };
 
