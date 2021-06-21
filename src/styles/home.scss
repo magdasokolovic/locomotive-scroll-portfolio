@@ -18,11 +18,6 @@ body {
 
 }
 
-.telefon {
-    display: none;
-    
-}
-
 
 .main-container {
     padding: 5vw;
@@ -70,24 +65,44 @@ section {
     body {
         background-color: #ed6a5e;
         color: #dbd8d6;
-            .telefon {
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                padding: 0 3em;
-                h1 {
-                    font-size: 2rem;
-                    text-transform: uppercase;
-                    text-align: center;
-                    font-family: 'Bai Jamjuree', sans-serif;
-                    font-weight: 600;
-
-                }
-            }
         
+
+        .main-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 0 3em;
+            position: relative;
+            width: 100%;
+            display: none;
+            
+                h1, h2, h3, h4, h5, h6, p {
+                    visibility: hidden;
+                }
+
+            
+
+            &::before {
+                display: block;
+                position: absolute;
+                content: "Prosiłam otworzyć tylko na laptopie lub komputerze! Żadnych telefonów";
+                top: 50%;
+                left: 50%;
+                transform: translateY((-50%));
+                font-size: 2rem;
+                text-transform: uppercase;
+                text-align: center;
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-weight: 600;
+            }
+        }
+            
     }
+        
 }
+
+
 

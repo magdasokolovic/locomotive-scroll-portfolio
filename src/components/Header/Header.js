@@ -28,11 +28,7 @@ export default function Header() {
     return (
         <section className="header-container"
         data-scroll-section>
-            {/* <ul className="header-menu">
-                <li>Intro</li>
-                <li>Pozdrowienia</li>
-                <li>Galeria</li>
-            </ul> */}
+
 
             <h1 id="header-text">Rok po ślubie...</h1>
         </section>

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import Loadable from "react-loadable";
 import "../styles/home.scss";
 
@@ -9,14 +9,14 @@ const HomeLazy = Loadable({
   loading: loader,
 });
 
-function Telefon() {
-  return (
-      <div className="telefon">
-          <h1>Prosiłam otworzyć tylko na laptopie lub komputerze! 
-            Żadnych telefonów :)</h1>
-      </div>
-  )
-}
+// function Telefon() {
+//   return (
+//       <div className="telefon">
+//           <h1>Prosiłam otworzyć tylko na laptopie lub komputerze! 
+//             Żadnych telefonów :)</h1>
+//       </div>
+//   )
+// }
 
 
 const Index = () => {
