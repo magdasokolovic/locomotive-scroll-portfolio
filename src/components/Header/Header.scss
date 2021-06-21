@@ -1,24 +1,24 @@
 .header-container {
     position: relative;
     max-height: 100vh;
-    .header-menu {
-        position: absolute;
-        left: 0;
-        top: 100px;
-        letter-spacing: 1px;
-        font-family: 'Syncopate', sans-serif;
-        font-weight: 600;
-        color: #626262;
-        text-transform: uppercase;
+    // .header-menu {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 100px;
+    //     letter-spacing: 1px;
+    //     font-family: 'Syncopate', sans-serif;
+    //     font-weight: 600;
+    //     color: #626262;
+    //     text-transform: uppercase;
 
-        li {
-            margin: 10px 0;
-        }
-    }
+    //     li {
+    //         margin: 10px 0;
+    //     }
+    // }
 }
 
 #header-text {
-    font-size: 20vw;
+    font-size: 18vw;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Bai Jamjuree', sans-serif;
