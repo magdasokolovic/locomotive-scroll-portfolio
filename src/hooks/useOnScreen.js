@@ -12,7 +12,8 @@ function useOnScreen(ref) {
             },
             {
                 //90% should the visible for the callback function 
-                treshold: 0.9
+                treshold: 0.5
+
             }
         )
 
