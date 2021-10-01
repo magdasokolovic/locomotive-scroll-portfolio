@@ -66,6 +66,7 @@ function GalleryItem({src, category, subtitle, title, updateActiveImage, index})
                         style={{ backgroundImage: `url(${src})` }}>
                     </div>
                 </div>
+                
             <div></div>
         </div>
     )
