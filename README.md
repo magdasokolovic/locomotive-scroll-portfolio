@@ -1,7 +1,8 @@
 ### [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll)
 
 - add "data-scroll-container" to the main home container and "data-scroll-section" to each section/component
-
+### TO DO: 
+- make this website responsive **!important**
 ### gsap:
 - SplitText is an easy to use JavaScript utility that allows you to split HTML text into characters, words and lines. 
 - "gsap.utils.toArray('.class-name)" - Convert almost any array-like object to an array, including selector text! (ex: toArray(".class") --> [element1, element2]). 
